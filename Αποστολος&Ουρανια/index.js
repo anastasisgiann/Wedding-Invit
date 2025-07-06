@@ -23,7 +23,7 @@ function openMenu() {
   // Trigger fade-in
   setTimeout(() => {
     navbarMenu.classList.add('show');
-  }, 10);
+  }, 500);
 }
 
 function closeMenu() {
@@ -34,7 +34,7 @@ function closeMenu() {
   setTimeout(() => {
     navbarMenu.classList.remove('fullscreen');
     mainContent.classList.remove('hidden');
-  }, transitionDuration);
+  }, 500);
 }
 
 toggler.addEventListener('click', () => {
@@ -65,8 +65,8 @@ navLinks.forEach(link => {
       if (targetHref && targetHref !== '#') {
         window.location.href = targetHref;
       }
-    }, transitionDuration);
-  });
+    }, 500);
+  }, 500);
 });
 
 
@@ -100,25 +100,25 @@ setInterval(updateCountdown, 60000);
 
 
 
-const map = L.map('churchmap').setView([40.694704,24.554991], 17);
+const map = L.map('churchmap').setView([39.2358829, 20.5306762], 15);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-L.marker([40.694704,24.554991])
+L.marker([39.2358829, 20.5306762])
   .addTo(map)
   .bindPopup('Ιερός Ναός Αγίου Δημητρίου, Καλιράχη')
   
 
 
-const emap = L.map('eventmap').setView([40.6921582,24.5259740], 17);
+const emap = L.map('eventmap').setView([39.2315395, 20.6158042], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(emap);
 
-L.marker([40.6921582,24.5259740])
+L.marker([39.2315395, 20.6158042])
   .addTo(emap)
   .bindPopup('Το παλαιό Κλίσμα')
   

@@ -1,7 +1,10 @@
 body{
     overflow-x: hidden;
     margin: 0 auto !important; 
+    background-color: rgb(245, 238, 230) !important;
 }
+
+
 
 .bg-img{
     height: 100vh;
@@ -40,8 +43,8 @@ body{
 }
 
 .navbar-toggler-icon {
-background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28155, 125, 95, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28155, 125, 96, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+border: none !important;
 }
 
 .navbar-toggler{
@@ -49,18 +52,23 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   
 }
 
-.bg-olive {
+.bg-brown {
     background-color: rgb(155, 125, 96) !important;
   }
   
   #collapsibleNavbar {
     opacity: 0;
     visibility: hidden;
-    transition: all 0.7s;
+    transition: all 0.7s !important;
   }
   
   /* Show the menu with a fade-in */
   #collapsibleNavbar.show.fullscreen {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #collapsibleNavbar.remove.fullscreen {
     opacity: 1;
     visibility: visible;
   }
@@ -75,6 +83,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     z-index: 1050;
     background-color: rgba(155, 125, 96, 0.985) !important;
     overflow-y: scroll;
+    transition: all 0.5;
+    
   }
   
   /* Close button positioning */
@@ -83,11 +93,10 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     top: 3%;
     right: 2%;
     z-index: 1060;
-   background-color: transparent !important;
-   border: none;
-   font-size: 1.5rem;
-   padding: 4px 12px;
-   border-radius: 4px;
+    background-color: transparent !important;
+    border: none;
+    font-size: 2rem;
+    color: white !important;
   }
 
   .countdown-header {
@@ -247,6 +256,7 @@ section#invitation {
 .church-map{
   width: 80vw;
   justify-self: center !important;
+
 }
 
 .church-img{
@@ -256,7 +266,7 @@ section#invitation {
 }
 
 @media screen and (min-width: 800px){
-  .ch-img {
+  .church-img {
     width: 50vw !important;
     display: block;
   margin: auto;
@@ -298,9 +308,106 @@ section#invitation {
 }
 
 @media screen and (min-width: 800px){
+  .link-p{
+    font-size: 1.5vw !important;
+    width: 50vw !important;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 800px){
   .church-p{
     font-size: 1.5vw !important;
     width: 50vw !important;
     margin: auto;
+  }
+}
+
+.payment-brd{
+  border-top: 0.3vh solid rgb(155, 125, 96) !important;
+  border-bottom: 0.3vh solid rgb(155, 125, 96) !important;
+   border-radius: 4%;
+   width: 80vw;
+   margin: 0 auto;
+   margin-top: 3vh;
+}
+
+.payment-sec{
+  width: 80vw;
+   border-bottom: 0.3vh solid rgb(155, 125, 96) !important;
+   margin: 0 auto;
+   margin-top: 1vh;
+   
+  
+}
+
+.payment-hd{
+  color: rgb(155, 125, 96) !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5vw;
+  text-align: center;
+
+}
+
+.payment-p{
+  color: rgb(155, 125, 96) !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vw;
+  text-align: center;
+  
+}
+
+@media screen and (min-width: 800px){
+  .payment-med{
+    width: 50vw !important;
+
+  }
+}
+@media screen and (min-width: 800px){
+  .payment-p{
+    font-size: 1vw !important;
+  }
+}
+
+
+@media screen and (min-width: 800px){
+  .payment-hd{
+    font-size: 2vw !important;
+  }
+}
+
+.gift-header{
+  text-align: center !important;
+  color: rgb(155, 125, 96) !important;
+  margin-top: 10vh !important;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5vw !important;
+  margin-bottom: 4vh;
+}
+
+@media screen and (min-width: 800px){
+  .gift-header{
+    font-size: 2.2vw !important;
+  }
+}
+
+.gift-img{
+  width: 80vw;
+  justify-self: center;
+  height: 15vh;
+}
+
+@media screen and (min-width: 800px){
+  .gift-img{
+    width: 50vw !important;
+    display: block;
+    margin: auto;
+    height: 35vh;
   }
 }
