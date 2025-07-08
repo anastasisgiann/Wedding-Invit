@@ -30,7 +30,7 @@ body{
 
 .navbar-scrolled {
     border-bottom: 0.3vh solid rgb(155, 125, 96) !important;
-    background-color: white !important;
+    background-color: rgb(243, 228, 213) !important;
     border-color: rgb(127, 105, 54) !important;
     height: 15vh;
     opacity: .9;
@@ -102,7 +102,7 @@ border: none !important;
   .countdown-header {
   text-align: center !important;
   color: rgb(155, 125, 96) !important;
-  margin-top: 10vh !important;
+  margin-top: 3vh !important;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -187,7 +187,7 @@ border: none !important;
 .nav-link{
   font-size: 5vw !important;
   color: white;
-  margin-left: 10vw;
+  margin-left: 5vw;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -222,12 +222,12 @@ border: none !important;
 
 section#invitation {
     margin: auto;
-    width: 100vw;
+    width: 97vw;
     display: block;
 }
 
 .invit-img{
-  width: 99vw;
+  width: 97vw;
   justify-self: center;
 }
 
@@ -411,4 +411,42 @@ section#invitation {
     margin: auto;
     height: 35vh;
   }
+}
+
+.footer{
+   border-top: 0.3vh solid rgb(155, 125, 96) !important;
+   font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 4vw !important;
+  color: rgb(155, 125, 96);
+  margin-top: 10vh;
+  text-align: center;
+  height: 8vh;
+  padding-top: 2vh;
+  position: relative;
+  isolation: isolate;
+}
+
+@media screen and (min-width: 800px){
+.footer{
+  font-size: 1.5vw !important;
+
+  }
+}
+
+.footer::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .2;
+  background-image: url(oliveleafs.png);
+  background-position: center;
+  background-size:100vw 30vh;
+  background-repeat: no-repeat;
+}
+
+.bi-telephone-fill{
+  color:rgb(155, 125, 96) ;
 }
