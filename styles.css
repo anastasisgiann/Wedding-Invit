@@ -30,7 +30,7 @@ body{
 
 .navbar-scrolled {
     border-bottom: 0.3vh solid rgb(155, 125, 96) !important;
-    background-color: rgb(243, 228, 213) !important;
+    background-color: rgb(253, 246, 238) !important;
     border-color: rgb(127, 105, 54) !important;
     height: 15vh;
     opacity: .9;
@@ -102,17 +102,55 @@ border: none !important;
   .countdown-header {
   text-align: center !important;
   color: rgb(155, 125, 96) !important;
-  margin-top: 3vh !important;
+  
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 7vw !important;
-  margin-bottom: 1vh;
+  
+  
+  
+  
+}
+.header-img{
+  width: 90vw;
+  height: 25vh;
+  border-radius: 50px;
+  position: relative;
+  isolation: isolate;  
+  background-color: transparent;
+  margin-top: 5vh !important;
+  margin-bottom: 3vh !important;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 800px){
+.header-img::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .3;
+  background-image: url(flowers.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+@media screen and (min-width: 1200px){
   .countdown-header{
-    font-size: 3.3vw !important;
+    font-size: 3vw !important;
+    
+  }
+}
+
+
+
+@media screen and (min-width: 1100px){
+  .header-img{
+    width: 50vw;
+    height: 30vh;
   }
 }
 
@@ -191,17 +229,18 @@ border: none !important;
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
+  margin-top: 2vh;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1200px){
   .nav-link{
-    font-size: 2vw !important;
+    font-size: 3vw !important;
   }
 }
 
 .nav-link:hover{
   background-color: rgb(96, 84, 62) !important;
-  border-radius: 6% !important;
+  border-radius: 2vw !important;
  
 }
 
@@ -214,9 +253,9 @@ border: none !important;
   font-style: italic;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1200px){
   .page-top {
-    font-size: 3vw !important;
+    font-size: 5vw !important;
   }
 }
 
@@ -229,16 +268,20 @@ section#invitation {
 .invit-img{
   width: 97vw;
   justify-self: center;
+  
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px) and(max-height: 700){
   .invit-img {
     width: 50vw !important;
     display: block;
-  margin: auto;
-    height: 90vh;
+    margin: auto;
+    
   }
 }
+
+
+
 
 .invited{
   font-size: 6vw;
@@ -254,47 +297,75 @@ section#invitation {
     font-size: 3vw !important;
   }
 }
-.church-map{
-  width: 80vw;
-  justify-self: center !important;
-
+@media screen and (min-width: 1200px){
+.img-fluid {
+  max-width: 50vw !important;
+  max-height: 60vh !important;
+}
 }
 
-.church-img{
-  width: 80vw;
-  justify-self: center;
-  height: 35vh;
+@media screen and (min-width: 1600px){
+.cnt {
+  width: 90vw !important;
+  height: 70vh;
+  
+}
 }
 
-@media screen and (min-width: 800px){
-  .church-img {
-    width: 50vw !important;
-    display: block;
-  margin: auto;
-    height: 40vh;
-  }
+.img-rnd{
+  border-radius: 4vw !important;
 }
+
 .church-p {
   color: rgb(155, 125, 96);
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
-  border-bottom: 0.3vh solid rgb(155, 125, 96) !important;
- 
-  width: 80vw;
-  font-size: 4vw;
+  text-align: center;
 }
 
-
-
-.map{
-  height: 40vh;
-  justify-content: center;
-  margin-top: 3vh;
-  border-radius: 3%;
- 
+@media screen and (max-width: 1199px){
+  .church-p{
+   border-bottom: 0.3vh solid rgb(155, 125, 96) !important;
+  }
 }
 
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#churchmap{
+width: 80vw;
+height: 40vh;
+margin: 0 auto;
+  
+}
+
+@media screen and (min-width: 1200px){
+  #churchmap{
+    height: 55vh;
+    width: 40vw;;
+
+  }
+}
+
+#eventmap{
+width: 80%;
+height: 40vh;
+margin: 0 auto;
+  
+}
+
+@media screen and (min-width: 1200px){
+  #eventmap{
+     height: 55vh;
+    width: 40vw;;
+    
+    
+
+  }
+}
 
 .link-p{
   color: rgb(155, 125, 96) !important;
@@ -303,24 +374,21 @@ section#invitation {
   font-style: italic;
   text-decoration: inherit !important;
   padding-bottom: 1vh;
-  width: 80vw;
-  font-size: 5vw;
+  
 
 }
 
 @media screen and (min-width: 800px){
   .link-p{
     font-size: 1.5vw !important;
-    width: 50vw !important;
-    margin: auto;
+
   }
 }
 
 @media screen and (min-width: 800px){
   .church-p{
     font-size: 1.5vw !important;
-    width: 50vw !important;
-    margin: auto;
+  
   }
 }
 
@@ -422,8 +490,8 @@ section#invitation {
   color: rgb(155, 125, 96);
   margin-top: 10vh;
   text-align: center;
-  height: 8vh;
-  padding-top: 2vh;
+  height: 5vh;
+  padding-top: 1vh;
   position: relative;
   isolation: isolate;
 }
