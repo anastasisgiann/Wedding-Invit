@@ -64,13 +64,14 @@ border: none !important;
   
   /* Show the menu with a fade-in */
   #collapsibleNavbar.show.fullscreen {
-    opacity: 1;
+    opacity: 5;
     visibility: visible;
   }
 
   #collapsibleNavbar.remove.fullscreen {
-    opacity: 1;
+    opacity: 1.5;
     visibility: visible;
+    transition: all 0.7;
   }
 
   /* Fullscreen style for the dropdown */
@@ -83,7 +84,7 @@ border: none !important;
     z-index: 1050;
     background-color: rgba(197, 180, 163, 0.985) !important;
     overflow-y: scroll;
-    transition: all 0.8;
+    transition: all 0.7;
     
   }
   
@@ -102,11 +103,13 @@ border: none !important;
   .countdown-header {
   text-align: center !important;
   color: rgb(155, 125, 96) !important;
-  
   font-family: "Zen Kurenaido", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 7vw !important;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  
   
   
   
@@ -239,8 +242,9 @@ border: none !important;
 }
 
 .nav-link:hover{
-  background-color: rgb(96, 84, 62) !important;
+  background-color: rgb(255, 255, 255) !important;
   border-radius: 2vw !important;
+  color: rgb(155, 125, 96) !important;
  
 }
 
@@ -339,6 +343,7 @@ section#invitation {
 width: 80vw;
 height: 40vh;
 margin: 0 auto;
+border-radius: 30px !important;
   
 }
 
@@ -351,9 +356,10 @@ margin: 0 auto;
 }
 
 #eventmap{
-width: 80%;
+width: 80vw;
 height: 40vh;
 margin: 0 auto;
+border-radius: 30px !important;
   
 }
 
@@ -487,34 +493,27 @@ margin: 0 auto;
   font-weight: 600;
   font-style: italic;
   font-size: 4vw !important;
-  color: rgb(155, 125, 96);
+  color: rgb(255, 255, 255);
   margin-top: 10vh;
   text-align: center;
-  height: 5vh;
-  padding-top: 1vh;
+  height: 8vh;
   position: relative;
   isolation: isolate;
+  background-color: rgb(155, 125, 96);
+  padding-top: 1vh;
 }
 
 @media screen and (min-width: 800px){
-.footer{
+.footerdiv{
   font-size: 1.5vw !important;
-
   }
 }
 
-.footer::after{
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  opacity: .2;
-  background-image: url(oliveleafs.png);
-  background-position: center;
-  background-size:100vw 30vh;
-  background-repeat: no-repeat;
+.footerdiv{
+  padding: 0;
+  margin: 0 auto;
+  background-color: rgb(155, 125, 96);
+  color:rgb(255, 255, 255) ;
+  background-color: rgb(155, 125, 96);
 }
 
-.bi-telephone-fill{
-  color:rgb(155, 125, 96) ;
-}
