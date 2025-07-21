@@ -23,7 +23,7 @@ function openMenu() {
   // Trigger fade-in
   setTimeout(() => {
     navbarMenu.classList.add('show');
-  }, 500);
+  }, 700);
 }
 
 function closeMenu() {
@@ -34,7 +34,7 @@ function closeMenu() {
   setTimeout(() => {
     navbarMenu.classList.remove('fullscreen');
     mainContent.classList.remove('hidden');
-  }, 500);
+  }, 700);
 }
 
 toggler.addEventListener('click', () => {
@@ -65,14 +65,14 @@ navLinks.forEach(link => {
       if (targetHref && targetHref !== '#') {
         window.location.href = targetHref;
       }
-    }, 500);
-  }, 500);
+    }, 700);
+  }, 700);
 });
 
 
 
 // Set your target date (e.g., June 1, 2025)
-const targetDate = new Date("2025-09-27T16:30:00").getTime();
+const targetDate = new Date("2025-11-08T15:30:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
